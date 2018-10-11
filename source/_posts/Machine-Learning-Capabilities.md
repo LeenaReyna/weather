@@ -1,20 +1,21 @@
 ---
 title: Machine Learning Capabilities
-date: 2018-6-4 17:00:00
+date: 2018-9-24 17:00:00
 category: Computer And Network
 ---
 
-![Ai](https://thenewbleacherbums.com/content/images/4.jpg)
+![](/images/4.jpg)
 
 
-Evaluate SDN and machine learning capabilities and trade-offs
+## Evaluate SDN and machine learning capabilities and trade-offs
 
-SDN and equipment learning can combine to form knowledge-defined networking, which uses gathered data to manage network configuration. It’s important, even so, to consider trade-offs.
+SDN and equipment learning can combine to form knowledge-defined networking, which uses gathered data to manage network configuration. It's important, even so, to consider trade-offs.
 
 In the study paper "Knowledge-Defined Networking," the authors describe three experiments that take telemetry...
 
-info gathered from all of the nodes in a good network, process it working with machine learning, and utilize the resulting data to manage characteristics of network construction and forwarding via an SDN controller.
+<!-- more -->
 
+info gathered from all of the nodes in a good network, process it working with machine learning, and utilize the resulting data to manage characteristics of network construction and forwarding via an SDN controller.
 
 They call this technique of using elements of SDN and machine learning knowledge-defined networking.
 
@@ -28,15 +29,17 @@ Using these details, the SDN controller can certainly try positioning different 
 
 For example, if there are two flows from M toward B and one from P toward A, the controller will place both flows from M toward B on the two available links. The controller could work through the available paths at K, inserting the flows the following:
 
-the first flow on the road through H and the next flow on the road through G;
-the first flow on the path through G and the next flow on the road through H;
-both flows on the road through G; or
-both flows on the path through H.
+- the first flow on the road through H and the next flow on the road through G;
+- the first flow on the path through G and the next flow on the road through H;
+- both flows on the road through G; or
+- both flows on the path through H.
+
 In moving through the combinations, the SDN controller may use the instrumentation at the four overlay routers to determine which of the possible combinations offers a traffic pattern with the right delay through the network. This work provides what's perhaps one of the better available employ cases for SDN and equipment learning in network functions. The utilization case is definitely solvable at least in a trivial case, yet it is possible to picture a real-environment deployment of this sort of technology to solve specific problems.
 
 No work of this kind, even so, is without its complications; if you haven't determined the tradeoff, then you haven't looked hard more than enough. It's important to look at the challenges this sort of work will probably face before it could be deployed in a meaningful method in large-scale fabrics.
 
-SDN and equipment learning tradeoffs
+## SDN and equipment learning tradeoffs
+
 First, there can be an underlying assumption about the system's capability to measure at every edge of the overlay -- to take all of this data and derive meaning from it. But at scale, this is simply not as convenient a problem to solve as it might primarily seem. For instance, many hyperscale fabrics carry terabits of data each day. Collecting information upon this number of flows will be challenging. In fact, it's likely such something would need a high-speed control network just to carry the network telemetry. Processing this volume of details in near-real time so it pays to for adjusting the circulation of site visitors through the network will get difficult.
 
 Second, lots of the flows found in a large-scale network will be mouse flows, or microflows. Various applications will create mouse and elephant flows with numerous attributes. Mouse flows are nearly always going to be also short-lived to usefully characterize on a per-request basis using any kind of machine learning. It really is tempting to classify all mouse flows as anything, but each application may do in a totally different approach and treat its mouse flows differently. This will probably be a difficult issue to solve.
